@@ -1,5 +1,8 @@
+/*
+
 .App {
   text-align: center;
+  margin-top: 100px;
 }
 
 .App-logo {
@@ -35,4 +38,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*/
+
+/* Existing styles (keep them as is) */
+.App {
+  text-align: center;
+  margin-top: 100px; /* Reduced space from the top */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New styles for reducing space between heading and chat box */
+h1 {
+  margin-top: 10px;  /* Reduced margin at the top */
+  margin-bottom: 10px; /* Reduced margin between heading and chat box */
+  font-size: 28px;  /* Font size for the heading */
+  color: #fff;  /* White color for the text */
+  font-weight: bold; /* Optional: Make the heading bold */
+}
+
+.chat-container {
+  margin-top: 10px; /* Reduced space between the heading and chat box */
 }
